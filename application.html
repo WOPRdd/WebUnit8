@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<meta name="Description" content="This is the job application page for Hot Beans Web. Apply now!">
+<meta name="Keywords" content="Web-Developer job, Web-development, Job, Job application, Jobs available, SEO job, Front-End development job, Back-end developemnt job">
+	
+<title>Apply for a job at Hot Beans Web!</title>
+<link rel="icon" type="image/x-icon" href="Images/hotbeans.png">
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+</head>
+<body>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-md py-3 navbar-custom"> 
+  <!-- Brand --> 
+  <a href="about-us.html"><img src="Images/hotbeans.png" alt="hotbeanslogo" width="70" height="70" href=></a> <a class="navbar-brand" href="about-us.html">Hot Beans Web</a> 
+  
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+  
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" href="about-us.html">About Us</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="employees.html">Our Team</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="jobspec.html">Job Spec</a> </li>
+      <li class="nav-item active"> <a class="nav-link" href="application.html">Apply</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="courses.html">Courses</a> </li>
+      <li class="nav-item"> <a href="https://www.linkedin.com/feed/" class="socialicon nav-link"> <img src="Images/linkedinsocialmedialogo32.png" alt="LinkedInSocialMediaLogo"></a> </li>
+      <li class="nav-item"> <a href="https://www.facebook.com/?locale=en_GB" class="socialicon nav-link"> <img src="Images/facebooksocialmedialogo32.png" alt="FacebookSocialMediaLogo"></a> </li>
+    </ul>
+  </div>
+</nav>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Apply</h1>
+  </div>
+</div>
+<br>
+<br>
+<div class="justify-content-center">
+  <div class="container">
+    <div class="p-4 bg-custom2 border rounded">
+      <form id="myForm" class="was-validated" onSubmit="myFormSubmits(event)">
+        <!--Title-->
+        <div class="form-group">
+          <label for="nameTitle">
+          <h5 style="color: white;">Title:</h5>
+          </label>
+          <select id="nameTitle" class="form-control" name="Title" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium">
+            <option value="">Please select a title...</option>
+            <option value="MR">Mr</option>
+            <option value="MISS">Miss</option>
+            <option value="MRS">Mrs</option>
+            <option value="DR">Dr</option>
+          </select>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        
+        <!--Full name-->
+        <div class="form-group">
+          <label for="fullName">
+          <h5 style="color: white;">Full Name:</h5>
+          </label>
+          <input type="text" class="form-control"
+								id="fullName" name="fullName"  placeholder="Please enter your Full Name" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium">
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--Email-->
+        <div class="form-group">
+          <label for="email">
+          <h5 style="color: white;">Email Address:</h5>
+          </label>
+          <input type="email" class="form-control"
+								id="email" name="email" placeholder="Please enter your Email" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium">
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--Number-->
+        <div class="form-group">
+          <label for="mobile">
+          <h5 style="color: white;">Contact Number:</h5>
+          </label>
+          <input type="tel" class="form-control" pattern="[0-9\s]+"  maxLength="16"  minLength="10"
+								id="mobile" name="mobile"  placeholder="Enter your phone number" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium">
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--Address-->
+        
+        <div class="form-group">
+          <label for="address">
+          <h5 style="color: white;">Home Address:</h5>
+          </label>
+          <textarea  class="form-control"
+								id="address" name="address"  rows="1"  placeholder="Enter your Address" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium"></textarea>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <!--Job Title-->
+        <div class="form-group">
+          <label for="jobTitle">
+          <h5 style="color: white;">Job Title:</h5>
+          </label>
+          <select id="jobTitle" class="form-control" name="JobTitle" required style="border-color: orange; border-radius: 20px; border-style: solid; border-width: medium">
+            <option value="">Please select a job...</option>
+            <option value="Front-End Developer">Front-End Developer</option>
+            <option value="Back-End Developer">Back-End Developer</option>
+            <option value="SEO Specialist">SEO Specialist</option>
+          </select>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        
+        <!--Upload CV-->
+        <div class="form-group">
+          <label for="uploadCV">
+          <h5 style="color: white;">Upload CV</h5>
+          </label>
+          <input type="file" class="form-control-file"
+								id="uploadCV" name="uploadCV"  required>
+        </div>
+        <!--Buttons--> 
+        <a href="">
+        <button type="submit" class="btn btn-success btn-block">Submit</button>
+        </a>
+        <button type="reset" class="btn btn-secondary btn-block" style="color: red">Reset</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--CustomScripts--> 
+<script src="js/formScript.js"></script> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script> 
+
+<!--Footer-->
+<div class="row fixed-bottom text-white bg-custom">
+  <div class="text-center col-lg-6 offset-lg-3">
+    <h4>Hot Beans Web</h4>
+    <p>Copyright &copy; 2025 &middot; All Rights Reserved &middot; <a href="about-us.html" >Hot Beans Web</a></p>
+  </div>
+</div>
+</body>
+</html>
